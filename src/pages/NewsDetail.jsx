@@ -29,6 +29,7 @@ const NewsDetail = () => {
                         {" "}
                         <NewsOther />
                     </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, maxime.</p>
                 </div>
             </main>
         </>
