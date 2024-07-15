@@ -4,6 +4,7 @@ import LayoutWeb from "./components/layout/LayoutWeb";
 import Informedia from "./pages/InforMedia";
 import Intropage from "./pages/Intropage";
 import NewsDetail from "./pages/NewsDetail";
+import Careerpage from "./pages/Careerpage";
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
                 <Route path="intro" element={<Intropage />} />
                 <Route path="informedia" element={<Informedia />} />
                 <Route path="/informedia/newsdetail" element={<NewsDetail />} />
+                <Route path="career" element={<Careerpage />} />
             </Route>
         </Routes>
     );

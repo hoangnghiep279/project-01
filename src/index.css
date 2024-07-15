@@ -34,3 +34,6 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+.no-max-width {
+    max-width: none;
+}

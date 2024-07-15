@@ -74,6 +74,13 @@ import mediaImg7 from "../assets/imgs/imediapage/img-07.png";
 import arrowRight from "../assets/imgs/imediapage/arrow-right.svg";
 import arrowRight2 from "../assets/imgs/imediapage/arrow-right2.svg";
 
+import careerImg1 from "../assets/imgs/careerpage/career-img1.png";
+import careerImg2 from "../assets/imgs/careerpage/career-img2.png";
+import careerImg3 from "../assets/imgs/careerpage/career-img3.png";
+import careerImg4 from "../assets/imgs/careerpage/career-img4.png";
+import people from "../assets/imgs/careerpage/people.svg";
+import careerDecor from "../assets/imgs/careerpage/career-decor.png";
+
 export {
     location,
     homeContact1,
@@ -147,4 +154,10 @@ export {
     mediaImg7,
     arrowRight,
     arrowRight2,
+    careerImg1,
+    careerImg2,
+    careerImg3,
+    careerImg4,
+    people,
+    careerDecor,
 };
