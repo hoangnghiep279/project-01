@@ -72,7 +72,7 @@ const Producthome = () => {
                 <h3 className="text-2xl font-semibold text-primaryColor my-5">{products[currentIndex].name}</h3>
                 <p className="font-light text-base ">{products[currentIndex].description}</p>
                 <div className="mt-5">
-                    <Button words="Xem thêm" />
+                    <Button words="Xem thêm" padding="5" />
                 </div>
             </div>
         </div>
