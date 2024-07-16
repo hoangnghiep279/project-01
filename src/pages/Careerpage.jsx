@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { SubBanner } from "../components/Banner";
-import { smallhome, careerImg1, careerImg2, careerImg3, careerImg4, people, careerDecor } from "../imgs";
+import Banner from "../components/Banner";
+import { smallhome, careerImg1, careerImg2, careerImg3, careerImg4, people, careerDecor, mediaImg1 } from "../imgs";
 const Careerpage = () => {
     const [content, setContent] = useState(1);
     const handleClick = (index) => {
@@ -10,7 +10,7 @@ const Careerpage = () => {
         <>
             <main className="mt-24 font-open-sans">
                 <div className="relative shrink-0 pt-[32%] w-full ">
-                    <SubBanner />
+                    <Banner banner={mediaImg1} />
                 </div>
                 <section>
                     <div className="lg:w-container m-auto w-container-default mt-5  ">

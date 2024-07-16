@@ -1,16 +1,10 @@
-import { banner, mediaImg1 } from "../imgs";
-const Banner = () => {
+import { banner, banner3, mediaImg1 } from "../imgs";
+const Banner = ({ banner }) => {
     return (
         <>
             <img className="w-full h-full absolute top-0 left-0 object-cover" src={banner} alt="" />
         </>
     );
 };
-const SubBanner = () => {
-    return (
-        <>
-            <img className="w-full h-full absolute top-0 left-0 object-cover" src={mediaImg1} alt="" />
-        </>
-    );
-};
-export { Banner, SubBanner };
+
+export default Banner;

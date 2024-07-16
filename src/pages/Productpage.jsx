@@ -1,14 +1,14 @@
 import { Link, NavLink } from "react-router-dom";
 
-import { SubBanner } from "../components/Banner";
+import Banner from "../components/Banner";
 import Button from "../components/Button";
-import { smallhome, prodImg1, prodImg2, prodImg3 } from "../imgs";
+import { smallhome, prodImg1, prodImg2, prodImg3, mediaImg1 } from "../imgs";
 const Productpage = () => {
     return (
         <>
             <main className="mt-24 font-montserrat">
                 <div className="relative shrink-0 pt-[32%] w-full ">
-                    <SubBanner />
+                    <Banner banner={mediaImg1} />
                 </div>
                 <section>
                     <div className="lg:w-container m-auto w-container-default mt-5 font-open-sans pb-8">

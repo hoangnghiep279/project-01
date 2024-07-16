@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { SubBanner } from "../components/Banner";
+import Banner from "../components/Banner";
 import { Event, ImgLibrary } from "../components/News-media";
-import { smallhome, arrowRight2 } from "../imgs";
+import { smallhome, mediaImg1 } from "../imgs";
 const Informedia = () => {
     // const [content, setContent] = useState(1);
     // const handleClick = (content) => {
@@ -15,7 +15,7 @@ const Informedia = () => {
         <>
             <main className="mt-24">
                 <div className="relative shrink-0 pt-[32%] w-full ">
-                    <SubBanner />
+                    <Banner banner={mediaImg1} />
                 </div>
                 <section>
                     <div className="lg:w-container m-auto w-container-default mt-5 font-open-sans pb-8">

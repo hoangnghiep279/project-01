@@ -1,4 +1,4 @@
-import { Banner, SubBanner } from "../components/Banner";
+import Banner from "../components/Banner";
 import Contact from "../components/Contact";
 import { PrizeHome, Rate, News } from "../components/PrizeHome";
 import { Producthome } from "../components/Product";
@@ -17,6 +17,7 @@ import {
     star,
     homeContact1,
     homeContact2,
+    banner,
 } from "../imgs";
 
 const Homepage = () => {
@@ -24,7 +25,7 @@ const Homepage = () => {
         <>
             <div className="mt-24">
                 <div className="relative shrink-0 pt-[32%] w-full ">
-                    <Banner />
+                    <Banner banner={banner} />
                 </div>
             </div>
             <section className="font-montserrat py-12">
@@ -63,14 +64,14 @@ const Homepage = () => {
                         <div className="flex lg:block gap-6 lg:mt-0 mt-6">
                             <a
                                 href="tel:(207) 555-0119"
-                                className="lg:w-80 w-1/2 bg-primaryColor rounded-xl lg:py-7 p-4 leading-3  flex gap-6 items-center justify-center text-white text-lg lg:text-2xl lg:my-10"
+                                className="lg:w-80 w-1/2 bg-primaryColor rounded-xl lg:py-7 p-4 leading-3  flex gap-6 items-center justify-center text-white text-sm lg:text-2xl lg:my-10"
                             >
                                 <img src={smallphone} alt="" />
                                 (207) 555-0119
                             </a>
                             <a
                                 href="#!"
-                                className="lg:w-80 w-1/2 bg-[#FFB800] rounded-xl lg:py-7 p-4 leading-3 flex gap-6 items-center justify-center text-white text-lg lg:text-2xl "
+                                className="lg:w-80 w-1/2 bg-[#FFB800] rounded-xl lg:py-7 p-4 leading-3 flex gap-6 items-center justify-center text-white text-sm lg:text-2xl "
                             >
                                 <img src={nootbook} alt="" />
                                 NHẬN BÁO GIÁ
@@ -83,7 +84,7 @@ const Homepage = () => {
                 <h2 className="font-montserrat text-3xl font-bold text-primaryColor text-center mb-5">
                     ĐỐI TÁC CỦA <span className="text-secondColor">CHÚNG TÔI</span>{" "}
                 </h2>
-                <div className="flex justify-between flex-wrap">
+                <div className="flex lg:justify-between justify-center flex-wrap">
                     <a href="#!">
                         <img src={partner1} alt="" className="w-52 h-28 object-contain" />
                     </a>

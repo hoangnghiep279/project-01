@@ -86,6 +86,8 @@ import prodImg2 from "../assets/imgs/productpage/prod-img2.png";
 import prodImg3 from "../assets/imgs/productpage/prod-img3.png";
 import prodImg4 from "../assets/imgs/productpage/prod-img4.png";
 
+import banner3 from "../assets/imgs/banner3.png";
+
 export {
     location,
     homeContact1,
@@ -169,4 +171,5 @@ export {
     prodImg2,
     prodImg3,
     prodImg4,
+    banner3,
 };

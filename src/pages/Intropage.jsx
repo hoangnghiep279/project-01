@@ -1,4 +1,4 @@
-import { Banner } from "../components/Banner";
+import Banner from "../components/Banner";
 import Contact from "../components/Contact";
 import { Subnav } from "../components/Introcpnt";
 import {
@@ -20,12 +20,13 @@ import {
     introLogo4,
     introLogo5,
     homeContact1,
+    banner,
 } from "../imgs";
 const Intropage = () => {
     return (
         <main className="mt-24">
             <div className="relative shrink-0 pt-[32%] w-full ">
-                <Banner />
+                <Banner banner={banner} />
             </div>
             <div>
                 <Subnav />
