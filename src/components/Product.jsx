@@ -1,9 +1,13 @@
-import { product1, product2, product3, product4, product5, arrowleft, arrowright } from "../imgs";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { product1, product2, product3, product4, product5, arrowleft, arrowright, prodImg1, arrowRight } from "../imgs";
+import { Link, NavLink } from "react-router-dom";
 
 import React, { useState } from "react";
 import Button from "./Button";
 
-const Product = () => {
+const Producthome = () => {
     // const products = [product1, product2, product3, product4, product5];
     const products = [
         {
@@ -74,5 +78,78 @@ const Product = () => {
         </div>
     );
 };
+const ProdDetailpage = () => {
+    const prod = [
+        {
+            img: prodImg1,
+            name: "VÁN MDF",
+            desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat ...",
+        },
+        {
+            img: prodImg1,
+            name: "VÁN MDF",
+            desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat ...",
+        },
+        {
+            img: prodImg1,
+            name: "VÁN MDF",
+            desc: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat ...",
+        },
+    ];
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+    };
 
-export default Product;
+    return (
+        <Slider {...settings}>
+            {prod.map((p) => (
+                <div
+                    key={p.name}
+                    className="  overflow-hidden px-4 
+                                "
+                >
+                    <img src={p.img} alt="" className="w-full  object-cover" />
+                    <div className=" p-5 bg-primary01">
+                        <span className="text-[#A4A4A4] text-xs">{p.name}</span>
+                        <h3 className="display-dot my-5">{p.desc}</h3>
+                        <NavLink to="#!" className="flex items-center text-primaryColor gap-3">
+                            Xem thêm
+                            <img src={arrowRight} alt="" className="mt-1" />
+                        </NavLink>
+                    </div>
+                </div>
+            ))}
+        </Slider>
+    );
+};
+
+// Custom arrows for the slider
+const SampleNextArrow = (props) => {
+    const { onClick } = props;
+    return (
+        <div
+            onClick={onClick}
+            className="w-12 h-12 hidden lg:flex rounded-full border-primaryColor border-2  items-center justify-center absolute top-1/2 transform -translate-y-1/2 right-[-126px] mr-2 cursor-pointer z-10"
+        >
+            <img src={arrowright} alt="Next" />
+        </div>
+    );
+};
+
+const SamplePrevArrow = (props) => {
+    const { onClick } = props;
+    return (
+        <div
+            onClick={onClick}
+            className="w-12 h-12 hidden lg:flex rounded-full border-primaryColor border-2  items-center justify-center absolute top-1/2 transform -translate-y-1/2 left-[-126px] ml-2 cursor-pointer z-10"
+        >
+            <img src={arrowleft} alt="Previous" />
+        </div>
+    );
+};
+export { Producthome, ProdDetailpage };

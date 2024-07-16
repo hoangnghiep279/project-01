@@ -81,6 +81,11 @@ import careerImg4 from "../assets/imgs/careerpage/career-img4.png";
 import people from "../assets/imgs/careerpage/people.svg";
 import careerDecor from "../assets/imgs/careerpage/career-decor.png";
 
+import prodImg1 from "../assets/imgs/productpage/prod-img1.png";
+import prodImg2 from "../assets/imgs/productpage/prod-img2.png";
+import prodImg3 from "../assets/imgs/productpage/prod-img3.png";
+import prodImg4 from "../assets/imgs/productpage/prod-img4.png";
+
 export {
     location,
     homeContact1,
@@ -160,4 +165,8 @@ export {
     careerImg4,
     people,
     careerDecor,
+    prodImg1,
+    prodImg2,
+    prodImg3,
+    prodImg4,
 };

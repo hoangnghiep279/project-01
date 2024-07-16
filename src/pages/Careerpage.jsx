@@ -112,19 +112,11 @@ const Careerpage = () => {
                                         như sau:
                                     </p>
                                 </div>
-                                <div className="flex mt-10 lg:w-container w-container-default m-auto">
-                                    <div className="lg:w-1/3 relative">
-                                        <img src={people} alt="" />
-                                        <img
-                                            src={careerDecor}
-                                            alt=""
-                                            className="absolute top-8 left-[-214px] no-max-width w-[585px] z-[-1]"
-                                        />
-                                    </div>
-                                    <div className="grid lg:grid-cols-2 gap-14">
+                                <div className="flex flex-col items-center mt-10 lg:flex-row-reverse  lg:w-container w-container-default m-auto">
+                                    <div className="grid lg:grid-cols-2 grid-cols-1 gap-14">
                                         <div className="w-[344px] h-auto lg:h-[310px] p-6 rounded-tr-[50px] rounded-bl-[50px] border-primaryColor border-[1px]">
                                             <h3 className="common_heading mb-3 ">
-                                                Lương + <span className="text-[#FFB800]">Phụ cấp:</span>
+                                                Lương + <span className="text-secondColor">Phụ cấp:</span>
                                             </h3>
                                             <ul className="list-disc ml-4">
                                                 <li>Lương theo năng lực</li>
@@ -152,7 +144,7 @@ const Careerpage = () => {
                                                 <li>Công ty hỗ trợ ăn ca tại nhà máy</li>
                                             </ul>
                                         </div>
-                                        <div className="w-[344px] h-auto lg:h-[310px] p-6 rounded-tr-[50px] rounded-bl-[50px] border-primaryColor border-[1px] col-span-2 m-auto">
+                                        <div className="w-[344px] h-auto lg:h-[310px] p-6 rounded-tr-[50px] rounded-bl-[50px] border-primaryColor border-[1px] lg:col-span-2 lg:m-auto">
                                             <h3 className="common_heading mb-3 ">Chế độ bảo hiểm</h3>
                                             <ul className="list-disc ml-4">
                                                 <li>
@@ -163,6 +155,14 @@ const Careerpage = () => {
                                             </ul>
                                         </div>
                                     </div>
+                                    <div className="lg:w-1/3 relative">
+                                        <img src={people} alt="" />
+                                        <img
+                                            src={careerDecor}
+                                            alt=""
+                                            className="absolute top-8 left-[-214px] no-max-width w-[585px] z-[-1]"
+                                        />
+                                    </div>
                                 </div>
                                 <div className="lg:w-container m-auto w-container-default py-16">
                                     <h2 className="common_heading text-4xl uppercase">Chế độ phúc lợi khác</h2>
@@ -170,7 +170,7 @@ const Careerpage = () => {
                                         Ngoài các chế độ theo quy định của Pháp luật, Công ty còn có các chế độ phúc lợi
                                         sau:
                                     </p>
-                                    <div className="flex gap-6 mt-10">
+                                    <div className="flex flex-col lg:flex-row gap-6 mt-10">
                                         <div className="lg:w-3/5">
                                             {" "}
                                             <img src={careerImg4} alt="" className="w-full h-full object-cover" />

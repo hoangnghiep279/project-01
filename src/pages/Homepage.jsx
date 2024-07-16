@@ -1,7 +1,7 @@
 import { Banner, SubBanner } from "../components/Banner";
 import Contact from "../components/Contact";
 import { PrizeHome, Rate, News } from "../components/PrizeHome";
-import Product from "../components/Product";
+import { Producthome } from "../components/Product";
 import {
     preview,
     phone,
@@ -35,7 +35,7 @@ const Homepage = () => {
                     </p>
                 </div>
                 <div className="flex items-center justify-center lg:overflow-visible overflow-hidden">
-                    <Product />
+                    <Producthome />
                 </div>
             </section>
             <section className="my-16">
@@ -81,7 +81,7 @@ const Homepage = () => {
             </section>
             <section className="py-16">
                 <h2 className="font-montserrat text-3xl font-bold text-primaryColor text-center mb-5">
-                    ĐỐI TÁC CỦA <span className="text-[#FFB800]">CHÚNG TÔI</span>{" "}
+                    ĐỐI TÁC CỦA <span className="text-secondColor">CHÚNG TÔI</span>{" "}
                 </h2>
                 <div className="flex justify-between flex-wrap">
                     <a href="#!">
@@ -123,7 +123,7 @@ const Homepage = () => {
             <section className="py-12 bg-rate-gradient">
                 <div className="flex flex-col items-center justify-center">
                     <h2 className="font-montserrat text-3xl font-bold text-primaryColor text-center mb-5">
-                        ĐÁNH GIÁ TỪ <span className="text-[#FFB800]">KHÁCH HÀNG</span>
+                        ĐÁNH GIÁ TỪ <span className="text-secondColor">KHÁCH HÀNG</span>
                     </h2>
                     <div className="flex gap-2 items-center">
                         <span className="w-24 h-[2px] bg-[#FFB800] block rounded-sm"></span>
@@ -141,7 +141,7 @@ const Homepage = () => {
             </section>
             <section className="py-24">
                 <h2 className="font-montserrat text-3xl font-bold text-primaryColor text-center mb-10">
-                    TIN TỨC - <span className="text-[#FFB800]">SỰ KIỆN</span>
+                    TIN TỨC - <span className="text-secondColor">SỰ KIỆN</span>
                 </h2>
                 <div className=" flex items-center justify-center overflow-hidden">
                     {" "}

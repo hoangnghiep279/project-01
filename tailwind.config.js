@@ -16,6 +16,7 @@ export default {
             },
             colors: {
                 primaryColor: "#3363AF",
+                secondColor: "#FFB800",
             },
             backgroundImage: {
                 "intro-bg": "url('./assets/imgs/intropage/intro-img4.png')",

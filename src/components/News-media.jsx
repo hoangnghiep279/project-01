@@ -168,11 +168,11 @@ const NewsOther = () => {
             {firstContent.map((c) => (
                 <div
                     key={c.img}
-                    className=" overflow-hidden bg-primary01 px-4 
+                    className=" overflow-hidden  px-4 
                                 "
                 >
                     <img src={c.img} alt="" className="w-full  object-cover" />
-                    <div className=" p-5 ">
+                    <div className=" p-5 bg-primary01">
                         <span className="text-[#A4A4A4] text-xs">{c.date}</span>
                         <h3 className="display-dot my-5">{c.desc}</h3>
                         <NavLink to="/informedia/newsdetail" className="flex items-center text-primaryColor gap-3">

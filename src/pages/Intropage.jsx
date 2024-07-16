@@ -50,14 +50,14 @@ const Intropage = () => {
                             chế biến gỗ và phát triển lâm nghiệp bền vững tại tỉnh Nghệ An. Với mục tiêu khai thác những
                             ưu thế về địa lý để phát triển kinh tế vùng, dự án đã được phê duyệt và đi vào hoạt động.
                         </p>
-                        <h2 className="font-bold text-[#FFB800] lg:text-4xl text-2xl">SINCE 2013</h2>
+                        <h2 className="font-bold text-secondColor lg:text-4xl text-2xl">SINCE 2013</h2>
                         <img src={logo} alt="" className="lg:w-[402px] w-[259.73px] mt-[-40px] ml-auto" />
                     </article>
 
                     <article>
                         <h2 className="common_heading text-[2.75rem]">
                             VỊ TRÍ
-                            <span className="text-[#FFB800]"> ĐỊA LÝ</span>
+                            <span className="text-secondColor"> ĐỊA LÝ</span>
                         </h2>
                         <p className="mt-5 font-semibold">
                             Nhà máy chế biến gỗ Nghệ An, với tổng diện tích 40 ha, thuộc sở hữu của Công ty Cổ phần Lâm
@@ -119,7 +119,7 @@ const Intropage = () => {
                     </div>
                     <div>
                         <p className="text-[#FBFBFB] text-xl font-bold lg:text-start text-center">TỔNG GIÁM ĐỐC</p>
-                        <h3 className="text-[#FFB800] text-[2rem] font-bold lg:text-start text-center">
+                        <h3 className="text-secondColor text-[2rem] font-bold lg:text-start text-center">
                             NGUYỄN TẤT SƠN
                         </h3>
                         <p className="text-[#FBFBFB] lg:w-[586px]  text-center">
@@ -131,7 +131,7 @@ const Intropage = () => {
                 </div>
             </section>
             <section className="font-open-sans text-center  lg:w-[1000px] m-auto pt-7 pb-20 w-container-default">
-                <h3 className="text-[#FFB800] lg:text-2xl font-semibold">Cảm ơn quý khách hàng đã đồng hành cùng</h3>
+                <h3 className="text-secondColor lg:text-2xl font-semibold">Cảm ơn quý khách hàng đã đồng hành cùng</h3>
                 <h2 className="common_heading lg:text-[2rem] text-2xl my-5">Lâm Nghiệp Tháng Năm</h2>
                 <p className="font-light ">
                     Nhà máy chế biến gỗ Nghệ An đã được khởi công xây dựng vào tháng 2 năm 2013, với mục đích ban đầu là
