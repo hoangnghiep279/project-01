@@ -25,7 +25,7 @@ const NewsDetail = () => {
 
                 <div className="py-9">
                     <h2 className="common_heading text-[2.5rem] mt-9 mb-4">TIN TỨC KHÁC</h2>
-                    <div>
+                    <div className=" flex items-center justify-center lg:overflow-visible overflow-hidden">
                         {" "}
                         <NewsOther />
                     </div>

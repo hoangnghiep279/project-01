@@ -84,21 +84,21 @@ const Homepage = () => {
                 <h2 className="font-montserrat text-3xl font-bold text-primaryColor text-center mb-5">
                     ĐỐI TÁC CỦA <span className="text-secondColor">CHÚNG TÔI</span>{" "}
                 </h2>
-                <div className="flex lg:justify-between justify-center flex-wrap">
-                    <a href="#!">
-                        <img src={partner1} alt="" className="w-52 h-28 object-contain" />
+                <div className="flex gap-10 justify-around items-center mt-6 overflow-x-auto w-full">
+                    <a href="#!" className="w-52 h-28 block flex-shrink-0">
+                        <img src={partner1} alt="" className="w-full h-full object-cover" />
                     </a>
-                    <a href="#!">
-                        <img src={partner2} alt="" className="w-52 h-28 object-contain" />
+                    <a href="#!" className="w-52 h-28 block flex-shrink-0">
+                        <img src={partner2} alt="" className="w-full h-full object-cover" />
                     </a>
-                    <a href="#!">
-                        <img src={partner3} alt="" className="w-52 h-28 object-contain" />
+                    <a href="#!" className="w-52 h-28 block flex-shrink-0">
+                        <img src={partner3} alt="" className="w-full h-full object-cover" />
                     </a>
-                    <a href="#!">
-                        <img src={partner4} alt="" className="w-52 h-28 object-contain" />
+                    <a href="#!" className="w-52 h-28 block flex-shrink-0">
+                        <img src={partner4} alt="" className="w-full h-full object-cover" />
                     </a>
-                    <a href="#!">
-                        <img src={partner5} alt="" className="w-52 h-28 object-contain" />
+                    <a href="#!" className="w-52 h-28 block flex-shrink-0">
+                        <img src={partner5} alt="" className="w-full h-full object-cover" />
                     </a>
                 </div>
             </section>
@@ -136,7 +136,7 @@ const Homepage = () => {
                         <span className="w-24 h-[2px] bg-[#FFB800] block rounded-sm"></span>
                     </div>
                 </div>
-                <div className="lg:w-container m-auto w-container-default">
+                <div className="lg:w-container m-auto w-container-default mt-14">
                     <Rate />
                 </div>
             </section>

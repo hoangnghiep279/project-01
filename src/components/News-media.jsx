@@ -164,25 +164,23 @@ const NewsOther = () => {
     };
 
     return (
-        <Slider {...settings}>
-            {firstContent.map((c) => (
-                <div
-                    key={c.img}
-                    className=" overflow-hidden  px-4 
-                                "
-                >
-                    <img src={c.img} alt="" className="w-full  object-cover" />
-                    <div className=" p-5 bg-primary01">
-                        <span className="text-[#A4A4A4] text-xs">{c.date}</span>
-                        <h3 className="display-dot my-5">{c.desc}</h3>
-                        <NavLink to="/informedia/newsdetail" className="flex items-center text-primaryColor gap-3">
-                            Xem thêm
-                            <img src={arrowRight} alt="" className="mt-1" />
-                        </NavLink>
+        <div className="lg:w-[1000px] w-container">
+            <Slider {...settings}>
+                {firstContent.map((c) => (
+                    <div key={c.img} className="lg:w-[294.89px] w-full lg:h-[212.12px]  px-4 ">
+                        <img src={c.img} alt="" className="w-full h-full object-cover" />
+                        <div className=" p-5 bg-primary01">
+                            <span className="text-[#A4A4A4] text-xs">{c.date}</span>
+                            <h3 className="display-dot my-5">{c.desc}</h3>
+                            <NavLink to="/informedia/newsdetail" className="flex items-center text-primaryColor gap-3">
+                                Xem thêm
+                                <img src={arrowRight} alt="" className="mt-1" />
+                            </NavLink>
+                        </div>
                     </div>
-                </div>
-            ))}
-        </Slider>
+                ))}
+            </Slider>
+        </div>
     );
 };
 

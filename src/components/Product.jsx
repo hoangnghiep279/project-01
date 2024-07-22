@@ -37,8 +37,18 @@ const Producthome = () => {
             img: product5,
             description: "Description for product 5.",
         },
+        {
+            name: "PRODUCT 6",
+            img: product3,
+            description:
+                "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+        },
+        {
+            name: "PRODUCT 7",
+            img: product4,
+            description: "Description for product 4.",
+        },
     ];
-
     const [currentIndex, setCurrentIndex] = useState(2);
 
     const handlePrev = () => {
@@ -49,14 +59,26 @@ const Producthome = () => {
         setCurrentIndex((prevIndex) => (prevIndex === products.length - 1 ? 0 : prevIndex + 1));
     };
 
+    const visibleProducts = () => {
+        const start = currentIndex - 2 < 0 ? products.length + (currentIndex - 2) : currentIndex - 2;
+        const end = currentIndex + 2 >= products.length ? currentIndex + 2 - products.length : currentIndex + 2;
+        let result = [];
+        if (start < end) {
+            result = products.slice(start, end + 1);
+        } else {
+            result = [...products.slice(start, products.length), ...products.slice(0, end + 1)];
+        }
+        return result;
+    };
+
     return (
         <div className="w-container m-auto">
-            <div className="flex justify-between items-center h-52">
-                {products.map((product, index) => (
+            <div className="flex lg:justify-between gap-20  items-center h-52 ">
+                {visibleProducts().map((product, index) => (
                     <div
                         key={index}
-                        className={`w-40 h-40 rounded-full border-4 ${
-                            index === currentIndex ? "w-48 h-48 border-primaryColor duration-1000" : "border-[#8D8D8D]"
+                        className={`w-40 h-40 rounded-full border-4  ${
+                            product === products[currentIndex] ? "w-48 h-48 border-primaryColor" : "border-[#8D8D8D]"
                         } border-solid`}
                     >
                         <img src={product.img} alt="" className="h-full w-full rounded-full object-contain" />
@@ -106,25 +128,23 @@ const ProdDetailpage = () => {
     };
 
     return (
-        <Slider {...settings}>
-            {prod.map((p) => (
-                <div
-                    key={p.name}
-                    className="  overflow-hidden px-4 
-                                "
-                >
-                    <img src={p.img} alt="" className="w-full  object-cover" />
-                    <div className=" p-5 bg-primary01">
-                        <span className="text-[#A4A4A4] text-xs">{p.name}</span>
-                        <h3 className="display-dot my-5">{p.desc}</h3>
-                        <NavLink to="#!" className="flex items-center text-primaryColor gap-3">
-                            Xem thêm
-                            <img src={arrowRight} alt="" className="mt-1" />
-                        </NavLink>
+        <div className="w-container">
+            <Slider {...settings}>
+                {prod.map((p) => (
+                    <div key={p.name} className="  overflow-hidden px-4 ">
+                        <img src={p.img} alt="" className="w-full  object-cover" />
+                        <div className=" p-5 bg-primary01">
+                            <span className="text-[#A4A4A4] text-xs">{p.name}</span>
+                            <h3 className="display-dot my-5">{p.desc}</h3>
+                            <NavLink to="#!" className="flex items-center text-primaryColor gap-3">
+                                Xem thêm
+                                <img src={arrowRight} alt="" className="mt-1" />
+                            </NavLink>
+                        </div>
                     </div>
-                </div>
-            ))}
-        </Slider>
+                ))}
+            </Slider>
+        </div>
     );
 };
 

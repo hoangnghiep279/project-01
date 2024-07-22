@@ -2,7 +2,13 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/free-mode";
 
+import { FreeMode, Pagination } from "swiper/modules";
+import { RxArrowTopRight } from "react-icons/rx";
 import {
     prize1,
     prize2,
@@ -108,11 +114,62 @@ const rating = [
         avatar: avatar4,
         review: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     },
+    {
+        name: "Wade Warren",
+        avatar: avatar4,
+        review: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    },
 ];
 const Rate = () => {
     return (
         <>
-            <div className="lg:flex lg:gap-7 mt-28 grid grid-cols-2 gap-14">
+            <Swiper
+                breakpoints={{
+                    340: {
+                        slidesPerView: 2,
+                        spaceBetween: 15,
+                    },
+                    800: {
+                        slidesPerView: 4,
+                        spaceBetween: 15,
+                    },
+                }}
+                freeMode={true}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[FreeMode, Pagination]}
+                className="pt-20"
+            >
+                {rating.map((rate) => (
+                    <SwiperSlide>
+                        <div className="rounded-xl bg-primaryColor relative font-inter lg:w-auto text-white p-5">
+                            <div>
+                                <img
+                                    src={rate.avatar}
+                                    alt=""
+                                    className="lg:w-28 w-24 lg:h-28 h-24 rounded-full absolute top-[-50px] left-1/2 translate-x-[-50%]"
+                                />
+                                <img src={decor2} alt="" className="absolute top-[-50px] lg:left-[21%]  left-[10%]" />
+                                <img src={decor1} alt="" className="absolute top-[-50px] lg:right-[21%] right-[10%]" />
+                            </div>
+                            <div className="flex flex-col justify-center items-center">
+                                {" "}
+                                <h3 className="mt-16 text-base">{rate.name}</h3>
+                                <div className="flex items-center gap-2 my-4">
+                                    <img src={star} alt="" />
+                                    <img src={star} alt="" />
+                                    <img src={star} alt="" />
+                                    <img src={star} alt="" />
+                                    <img src={star} alt="" />
+                                </div>
+                                <p className="text-[#AFCEFF] lg:text-base text-xs text-center ">{rate.review}</p>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+            {/* <div className="lg:flex lg:gap-7 mt-28 grid grid-cols-2 gap-14">
                 {rating.map((rate) => (
                     <div className="rounded-xl bg-primaryColor relative font-inter lg:w-auto text-white p-5">
                         <div>
@@ -138,7 +195,7 @@ const Rate = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
         </>
     );
 };

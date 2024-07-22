@@ -70,11 +70,15 @@ const Contactpage = () => {
                                 placeholder="Nội dung"
                             />
                         </div>
-                        <input
-                            type="submit"
-                            value="Gửi"
+
+                        <button
+                            onClick={(e) => {
+                                e.preventDefault();
+                            }}
                             className="lg:col-span-2 ml-auto py-2 rounded-lg w-[159px] border-2 border-[#dcdcdcb3] hover:bg-primaryColor hover:text-white"
-                        />
+                        >
+                            Gửi
+                        </button>
                     </div>
                 </form>
             </main>

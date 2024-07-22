@@ -3,7 +3,7 @@ const Footer = () => {
     return (
         <>
             <footer className="lg:bg-primaryColor py-9 bg-[#F5F5F5]">
-                <div className="w-container m-auto lg:flex justify-around font-montserrat hidden">
+                <div className="w-container m-auto lg:flex justify-between font-montserrat hidden">
                     <div className="uppercase text-white">
                         <h3 className="text-base font-medium leading-5 mb-7">GIỚI THIỆU</h3>
                         <ul>

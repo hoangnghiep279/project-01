@@ -75,7 +75,7 @@ const ProductDetail = () => {
                 </div>
                 <section className="py-14">
                     <h2 className="font-bold text-4xl mb-12">SẢN PHẨM LIÊN QUAN</h2>
-                    <div>
+                    <div className=" flex items-center justify-center lg:overflow-visible overflow-hidden">
                         <ProdDetailpage />
                     </div>
                 </section>
